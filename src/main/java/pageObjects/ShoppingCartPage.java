@@ -23,24 +23,9 @@ public class ShoppingCartPage extends BasePage {
 
     public void clickOn_GoToCheckout() {
         btn_GoToCheckout.click();
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//        }
     }
 
     public void clickOn_ContinueAsAGuest() {
         btn_ContinueAsAGuest.click();
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//        }
     }
-
-    public String actual_Item() {
-        String titleText = item_Title.getText();
-        return titleText;
-    }
-
-
 }

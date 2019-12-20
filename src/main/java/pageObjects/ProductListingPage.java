@@ -14,19 +14,11 @@ public class ProductListingPage extends BasePage {
         PageFactory.initElements(SeleniumDriver.getDriver(), this);
     }
 
-    @FindBy(how = How.CSS, using = "li#srp-river-results-listing1 h3")
+    @FindBy(how = How.CSS, using = "ul.srp-results.srp-list.clearfix li#srp-river-results-listing1 h3")
     private WebElement product;
 
-    private By ProductTitle = By.xpath("h3");
-
     public void choose_Product() {
-        wait.until(ExpectedConditions.elementToBeClickable(product));
         product.click();
-    }
-
-    public String Expected_ItemName() {
-        String titleText = product.getText();
-        return titleText;
     }
 
 }

@@ -8,7 +8,7 @@ public class BasePage {
     WebDriverWait wait;
 
     public BasePage() {
-        wait = new WebDriverWait(SeleniumDriver.getDriver(), 5, 50);
+        wait = new WebDriverWait(SeleniumDriver.getDriver(), 10, 50);
     }
 
 }

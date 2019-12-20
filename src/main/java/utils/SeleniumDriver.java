@@ -22,7 +22,7 @@ public class SeleniumDriver {
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, 5, 50);
+        wait = new WebDriverWait(driver, 10, 50);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
     }

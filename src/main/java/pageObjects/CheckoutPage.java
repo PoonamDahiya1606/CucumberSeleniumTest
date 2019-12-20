@@ -173,7 +173,10 @@ public class CheckoutPage extends BasePage {
     }
 
     public void select_PaymentOption() {
-        wait.until(ExpectedConditions.visibilityOf(select_creditCard));
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+        }
         select_creditCard.click();
     }
 
@@ -186,7 +189,6 @@ public class CheckoutPage extends BasePage {
     }
 
     public void add_CreditCard() {
-        wait.until(ExpectedConditions.elementToBeClickable(add_CreditCard));
         add_CreditCard.click();
     }
 

@@ -13,23 +13,25 @@ public class ProductPage extends BasePage {
         PageFactory.initElements(SeleniumDriver.getDriver(), this);
     }
 
-    //    @FindBy(how = How.CSS, using = ".actPanel.vi-noborder  div.u-cb  span a[role=\"button\"]")
-    @FindBy(how = How.CSS, using = ".actPanel .u-cb #atcRedesignId_btn")
-
+    @FindBy(how = How.CSS, using = "a.btn.btn-scnd.vi-VR-btnWdth-XL")
     private WebElement addToCart;
 
-    //    @FindBy(how = How.CSS, using = "div.app-atc-layer__actionRow a.btn.btn-prim.vi-VR-btnWdth-XL + a")
-    @FindBy(how = How.CSS, using = ".app-atc-layer__actionRow .btn-scnda")
-
+    @FindBy(how = How.LINK_TEXT, using = "Go to cart")
     private WebElement goToCart;
 
     public void add_To_Cart() {
-        wait.until(ExpectedConditions.visibilityOf(addToCart));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+        }
         addToCart.click();
     }
 
     public void go_To_Cart() {
-        wait.until(ExpectedConditions.elementToBeClickable(goToCart));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+        }
         goToCart.click();
     }
 

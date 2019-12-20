@@ -14,10 +14,15 @@ It is a behaviour driven development (BDD) approach to write automated test scri
 * Use `mvn test` to run features.
 
 ## Application Under Test
-Testing Web Application - "ebay.com.au" 
+Testing Web Application - `ebay.com.au` 
 * Scenario - Single Item Purchase using Credit Card as a Guest User.
 
-## Test Design Approach
+## Test Approach
+By Performing website testing, we ensures that the web application is functioning properly and can be accepted by real-ime users.
+UI design and Functionality are the captains of website testing. Hence, as part of this work, I am just covering the functional aspect of the application.
+We can further extend this framework to cover the visual testing of the web application.
+
+## Framework Design 
 * Used Page Object Model (Page factory). Benefits of using it:
 
 1. Code reusability – We can achieve code reusability by writing the code once and use it in different tests.
